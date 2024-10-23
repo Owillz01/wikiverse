@@ -13,6 +13,7 @@ export const App = () => {
         const response = await fetch(`${apiURL}/wiki`)
         const pagesData = await response.json()
         setPages(pagesData)
+        console.log(pagesData, 'pagesData')
       } catch (err) {
         console.log('Oh no an error! ', err)
       }
